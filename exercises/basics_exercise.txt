@@ -1,0 +1,12 @@
+# operator tutorial and exercise
+https://www.learnpython.org/en/Basic_Operators
+
+# string formatting and exercise
+https://www.learnpython.org/en/String_Formatting#google_vignette
+
+# string operation and exercise
+https://www.learnpython.org/en/Basic_String_Operations
+
+# loops tutorial and exercise
+https://www.learnpython.org/en/Loops
+
