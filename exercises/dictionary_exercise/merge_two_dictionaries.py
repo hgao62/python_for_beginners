@@ -1,0 +1,1 @@
+"""Question: Given two dictionaries, merge them into one. If a key exists in both dictionaries, the value from the second dictionary should be kept."""

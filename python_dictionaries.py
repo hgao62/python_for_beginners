@@ -1,3 +1,7 @@
+'''
+A dictionary in Python is an unordered collection of key-value pairs. Each key is unique, and the key-value pairs are separated by a colon (:). Dictionaries are mutable, meaning you can modify them after creation.
+'''
+# 1. create dictionary
 person = {
     'first_name': 'John',
     'last_name': 'Doe',
@@ -6,12 +10,48 @@ person = {
     'active': True
 }
 
-# dict[key]
+#2. access values
+# Accessing values
+print(person['name'])  # Output: Alice
+print(person['age'])   # Output: 25
 
-# del dict[key]
+#2.1 If you try to access a key that doesn't exist, Python will raise a KeyError. 
+# To avoid this, use the get() method, which returns None or a default value if the key isn't found.
+print(person.get('name'))       # Output: Alice
+print(person.get('job', 'N/A')) # Output: N/A
 
-# Looping all key-value pairs in a dictionary
 
+# 3. Adding or Modifying Key-Value Pairs
+person['job'] = 'Engineer'  # Adding new key-value pair
+person['age'] = 26          # Updating an existing key
+
+# 4. Removing Key-Value Pairs
+# Using pop()
+job = person.pop('job')  # Removes 'job' and returns 'Engineer'
+print(person)            # {'name': 'Alice', 'age': 26, 'city': 'Toronto'}
+
+# Using del
+del person['city']        # Removes the 'city' key-value pair
+print(person)             # {'name': 'Alice', 'age': 26}
+
+# Using popitem()
+last_item = person.popitem()
+print(last_item)          # ('age', 26)
+
+
+#5 Looping all key-value pairs in a dictionary
+
+# Iterating through keys
+for key in person.keys():
+    print(key)
+
+# Iterating through values
+for value in person.values():
+    print(value)
+
+# Iterating through key-value pairs
+for key, value in person.items():
+    print(f"{key}: {value}")
 
 
 stocks = {
