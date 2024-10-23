@@ -21,11 +21,23 @@ def has_duplicate(nums: List[int]) -> bool:
     pass# remove this line and add your code here
 
 
+def has_duplicate(nums) -> bool:
+    num_occured = {}
 
+    for num in nums:
+        if num in num_occured:
+            num_occured[num] = num_occured[num] +1
+        else:
+            num_occured[num] = 1
+    return num_occured
+{1:1, 2:1, 3:2}#number: frequency
 
-
+print(has_duplicate([1, 2, 3, 3]))
+{1:1, 2:1, 3:1}
 
 ### test cases below ####
 assert has_duplicate([1, 2, 3, 3])==True, "expect True"
 assert has_duplicate([1, 2, 3, 4])==False, "expect False"
 assert has_duplicate([])==False, "expect False"
+
+

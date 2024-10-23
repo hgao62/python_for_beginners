@@ -31,6 +31,7 @@ numbers[:4]
 # 5 sort a list
 # 5.1 sort in place
 numbers = [1, 3, 2, 7, 9, 4]
+1 in numbers
 numbers.sort()
 numbers.sort(reverse=True)
 # 5.2 sort to return a new list
