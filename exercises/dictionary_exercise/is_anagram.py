@@ -21,11 +21,34 @@ Constraints:
 s and t consist of lowercase English letters.
 
 ''' 
- 
+# s_dict = {'r':2, 'a':2, 'c':2,'e':1}
+# t_dict = {'r':2, 'a':2,'c':2, 'e':1}
+
 
 def is_anagram( s: str, t: str) -> bool:
-    return sorted(s) == sorted(t)
-### test cases below ####
+    s_dict = {}
+    t_dict = {}
+    for letter in s:
+        if letter not in s_dict:
+            s_dict[letter] =1
+        else:          
+            s_dict[letter] = s_dict[letter] +1
+            
+    for letter in t:
+        # if key does not exist
+        if letter not in t_dict:
+            t_dict[letter] =1
+        # else if key exist 
+        else:          
+            t_dict[letter] = t_dict[letter] +1
+            
+    
+    return s_dict == t_dict
+    
+def is_anagram(s: str, t: str) -> bool:
+    s_sorted = sorted(s)
+    t_sorted = sorted(t)
+    return s_sorted == t_sorted
 s = "racecar"
 t = "carrace"
 print(is_anagram(s,t))
