@@ -21,16 +21,11 @@ Constraints:
 s and t consist of lowercase English letters.
 
 ''' 
-
+ 
 
 def is_anagram( s: str, t: str) -> bool:
-    pass # remove this line and add your code here
-
-
-
+    return sorted(s) == sorted(t)
 ### test cases below ####
-s = "racecar", t = "carrace"
-assert is_anagram(s,t), True
-s = "jar", t = "jam"
-assert is_anagram(s,t), False
-assert is_anagram(s,t), False
+s = "racecar"
+t = "carrace"
+print(is_anagram(s,t))

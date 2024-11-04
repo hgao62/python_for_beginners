@@ -168,3 +168,8 @@ s[0] = "h"  # This will raise a TypeError
 
 
 f"{be}"
+
+
+number = "123"
+type(number)
+int(number)

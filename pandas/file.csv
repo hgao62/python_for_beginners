@@ -1,0 +1,9 @@
+Category,Value,Date,Name,Age,Email,ID
+A,10,2023/1/1,Alice,25,alice@example.com,12345
+A,10,2023/1/1,Alice,25,alice@example.com,12346
+A,,2023/1/2,Bob,30,bob@example.com,12347
+B,30,2023/1/1,,,charlie@example.com,12348
+B,40,2023/1/2,David,40,,12349
+C,,2023/1/1,Eva,45,eva@example.com,12350
+C,60,,Frank,50,frank@example.com,12351
+C,60,,Frank,50,frank@example.com,12351

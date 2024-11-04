@@ -1,0 +1,7 @@
+,Category,Value,Date,Name,Age,Email
+0,A,10.0,2023-01-01,Alice,25.0,alice@example.com
+1,A,,2023-01-02,Bob,30.0,bob@example.com
+2,B,30.0,2023-01-01,,,charlie@example.com
+3,B,40.0,2023-01-02,David,40.0,
+4,C,,2023-01-01,Eva,45.0,eva@example.com
+5,C,60.0,,Frank,50.0,frank@example.com

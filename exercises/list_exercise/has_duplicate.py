@@ -18,22 +18,14 @@ Output: false
 
 
 def has_duplicate(nums: List[int]) -> bool:
-    pass# remove this line and add your code here
-
-
-def has_duplicate(nums) -> bool:
-    num_occured = {}
-
+    empty_set = set() #use set other than list: 
     for num in nums:
-        if num in num_occured:
-            num_occured[num] = num_occured[num] +1
-        else:
-            num_occured[num] = 1
-    return num_occured
-{1:1, 2:1, 3:2}#number: frequency
+        if num in empty_set:
+            return True
+        empty_set.add(num)
+    return False
+        
 
-print(has_duplicate([1, 2, 3, 3]))
-{1:1, 2:1, 3:1}
 
 ### test cases below ####
 assert has_duplicate([1, 2, 3, 3])==True, "expect True"
