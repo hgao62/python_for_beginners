@@ -31,6 +31,7 @@ print(df[df['Age'] > 25])
 
 # Add a new column based on existing data
 df['Tax'] = df['Salary'] * 0.2
+df['Stock'] = 'AAPL'
 print(df)
 
 # Increase salary by 10%
@@ -38,12 +39,13 @@ df['Salary'] *= 1.1
 print(df)
 
 # Drop a column
+df
 df.drop('Tax', axis=1, inplace=True)
 print(df)
 
 # Group by City and calculate the average salary
 grouped = df.groupby('City')['Salary'].mean()
-print(grouped)
+salary_by_city = df.groupby('City')['Salary'].mean().reset_index(name='avg salary')
 
 # Save to CSV
 df.to_csv('employees.csv', index=False)

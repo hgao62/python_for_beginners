@@ -31,8 +31,8 @@ else:
 
 #4. for loop: iterate through list
 customer_names = ["gorge", "trump", "james"] # list
-for name in customer_names:
-    print(name)
+for i in customer_names:
+    print(i)
 #4.1 for loop: iterate through dictionary
 car_price_map = {"honda":20000, "audi":60000, "porsche":100000, "ferrai":2500000}
 for car_model, car_price in car_price_map.items(): # unpack dictionary key, value
@@ -51,6 +51,14 @@ price = price/5 # division
 price = price - 5 # subtraction
 price = price * 5 # products
 remainder = 10 % 3 # module
+
+# Operators
+
+# Arithmetic: +, -, *, /, %, **
+
+# Comparison: ==, !=, >, <
+
+# Logical: and, or, not
 
 
 #6 assignment use single equal sign

@@ -1,8 +1,9 @@
 
 import pandas as pd
 #1. read csv file located in same folder called file.csv and save the data to variable called df
-path = r"C:\development\repo\python_for_beginners\pandas\file.csv"
-df = pd.read_csv(path)
+df = pd.read_csv("file.csv")
+
+
 #2. drop rows that don't have email
 cleaned_df = df.dropna(subset=['Email'])
 

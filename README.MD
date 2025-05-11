@@ -7,6 +7,9 @@ This course is designed for beginners to learn Python programming from the groun
 
 ## Course Contents
 
+Download Python from [python.org.](https://www.python.org/)
+Download vscode https://code.visualstudio.com/download
+
 ### 1. Introduction to Python
 - What is Python?
 - Installing Python & Setting up the Environment

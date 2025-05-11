@@ -39,8 +39,9 @@ def analyze_data2(csv_path):
     customer_count_by_country_dict = customer_count_by_country.to_dict("records")
     
     # Find the country with the largest number of contracts
-    customer_contract = df.groupby("COUNTRY").agg(contract_sum=("CONTRCNT", "sum")).reset_index()
-    largest_contract_country = customer_contract.sort_values(by=["contract_sum", "COUNTRY"], ascending=False).iloc[0]
+    country_contracts = df.groupby('COUNTRY')['CONTRCNT'].sum()
+    max_country = country_contracts.idxmax()
+    max_contracts = country_contracts.max()
     
     # Unique cities with at least one customer
     unique_city_count = df["CITY"].nunique()

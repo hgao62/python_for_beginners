@@ -9,6 +9,3 @@ data = {
 df = pd.DataFrame(data)
 df['Rolling_Mean'] = df.groupby('Category')['Value'].apply(lambda x: x.rolling(window=2).mean())
 print(df)
-
-# df['Group_Mean'] = df.groupby('Category')['Value'].transform('mean')
-# print(df)

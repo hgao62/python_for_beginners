@@ -5,6 +5,9 @@
 # 1.2 followed by brackets and parameters(optional)
 # 1.3 finally add return statement if need to return something(optional)
 
+def add_two_numbers(number_1,number_2)->int:
+    res = number_1 + number_2
+    return res
 def add_two_numbers(number_1, number_2):
     """function to return a value"""
     sum = number_1 + number_2
