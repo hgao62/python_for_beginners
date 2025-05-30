@@ -66,13 +66,14 @@ Download vscode https://code.visualstudio.com/download
 
 - Understanding Errors and Exceptions
 - Using try-except Blocks
-- Handling Multiple Exceptions
 
 ### 9. Introduction to Pandas
 
 - Installing and Importing Pandas
 - DataFrames and Series
-- Basic Data Manipulation
+- Data Cleaning
+- Data Manipulation
+- Data Aggregations
 
 ---
 
